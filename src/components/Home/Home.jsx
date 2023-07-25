@@ -31,7 +31,7 @@ const Home = () => {
                     >
                         <Heading
                             color={'#1fb299'}
-                            fontSize={['4xl', '5xl', '5xl', '7xl']} className='heading'
+                            fontSize={['4xl', '5xl', '5xl', '9xl']} className='heading'
                             as={motion.h1}
                             initial={{
                                 y: '-100%',
@@ -109,7 +109,7 @@ const Home = () => {
                 </Stack>
             </section>
 
-            <section className="courses">
+            {/* <section className="courses">
                 <Heading
                     color={'#1fb299'}
                     fontSize={['4xl', '5xl', '5xl', '7xl']} className='heading'
@@ -137,7 +137,7 @@ const Home = () => {
 
                     </VStack>
                 </HStack>
-            </section>
+            </section> */}
         </>
     );
 }

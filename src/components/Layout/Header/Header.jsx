@@ -22,7 +22,7 @@ const Header = () => {
     </Link>
   )
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const isAuthenticated = true;
+  const isAuthenticated = false;
   const user = {
     role: "admin"
   }
@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       <section className="navbar">
-        <Stack width={'100%'} direction="row" paddingX={'8'} paddingY={'2'} spacing={4} alignItems="center" justifyContent={'space-between'} backdropFilter={'blur(5px)'} >
+        <Stack width={'100%'} direction="row" paddingX={['2','8','8','10']} paddingY={'2'} spacing={4} alignItems="center" justifyContent={'space-between'} backdropFilter={'blur(5px)'} >
           <Button onClick={onOpen}>
             <RiMenuFill />
           </Button>
