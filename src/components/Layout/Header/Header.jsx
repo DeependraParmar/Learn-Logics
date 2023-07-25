@@ -34,7 +34,7 @@ const Header = () => {
     <>
       <section className="navbar">
         <Stack width={'100%'} direction="row" paddingX={['2','8','8','10']} paddingY={'2'} spacing={4} alignItems="center" justifyContent={'space-between'} backdropFilter={'blur(5px)'} >
-          <Button onMouseOver={onOpen}>
+          <Button onClick={onOpen}>
             <RiMenuFill />
           </Button>
           <Link to='/' className='logocontainer'>
