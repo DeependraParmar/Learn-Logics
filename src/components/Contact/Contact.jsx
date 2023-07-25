@@ -53,7 +53,7 @@ const Contact = () => {
                             <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'60%'} gap={'2'} type='submit' ><BiSend size={'20'} />Send Message</Button>
                         </HStack>
                         <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
-                            <Link to='/courses'><Button colorScheme='teal' fontSize={'xs'} variant={'Link'} width={'60%'} gap={'2'} >Explore Courses</Button></Link>
+                            <Link to='/courses'><Button colorScheme='teal' fontSize={'xs'} width={'fit-content'} variant={'ghost'} gap={'2'} >Explore Courses</Button></Link>
                         </HStack>
                     </form>
                 </VStack>
