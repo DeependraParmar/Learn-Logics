@@ -31,7 +31,7 @@ const Home = () => {
                     >
                         <Heading
                             color={'#1fb299'}
-                            fontSize={['5xl', '5xl', '6xl', '8xl']} className='heading'
+                            fontSize={['4xl', '5xl', '6xl', '8xl']} className='heading'
                             as={motion.h1}
                             initial={{
                                 y: '-100%',
