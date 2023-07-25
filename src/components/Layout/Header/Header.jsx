@@ -10,7 +10,6 @@ import { VscDashboard } from 'react-icons/vsc';
 import { AiOutlineHome, AiOutlineFileText, AiOutlineUser } from "react-icons/ai";
 import { BsBook, BsPhone } from "react-icons/bs";
 import { BiMessage, BiLogIn, BiUserPlus, BiLogOut } from "react-icons/bi";
-import Particles from '../../Home/Particles';
 
 
 
@@ -55,7 +54,6 @@ const Header = () => {
             </Button>
           </DrawerHeader>
           <DrawerBody width={'100%'}>
-            <Particles/>
             <VStack width={'100%'} alignItems={'flex-start'} spacing={'4'}>
               <LinkCollection url={'/'} title={"Home"} icon={<AiOutlineHome right={'2'} size={'20'} />} />
               <LinkCollection url={'/courses'} title={'Courses'} icon={<BsBook right={'2'} size={'20'} />} />

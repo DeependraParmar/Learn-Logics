@@ -19,7 +19,7 @@ const Courses = () => {
 
     const CourseCard = ({views, title, imgSrc, id, addToPlaylistHandler, description, creator,lecture}) => {
         return (    
-            <VStack className='course' border={'1px solid teal'} alignItems={'flex-start'} width={['90vw', '300px', '300px', '350px']} borderRadius={'10px'} padding={'2'} backdropFilter={'blur(5px)'} >
+            <VStack className='course' border={'1px solid #75777c'} alignItems={'flex-start'} width={['90vw', '300px', '300px', '350px']} borderRadius={'10px'} padding={'2'} backdropFilter={'blur(5px)'} >
 
 
                 <Image src={imgSrc} width={'100%'} objectFit={'contain'} borderTopRadius={'10px'} alt='image here'/>

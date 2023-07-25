@@ -30,13 +30,13 @@ const ResetPassword = () => {
                 <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
 
                     {/* welcome heading  */}
-                    <Heading fontSize={['lg', 'lg', '2xl', '3xl']} textAlign={'center'} color={'#27debf'}>Forgot Password? Don't Worry</Heading>
+                    <Heading fontSize={['lg', 'lg', '2xl', '3xl']} textAlign={'center'} color={'#27debf'}>Reset Your Password</Heading>
                     <form style={{ width: '100%' }} >
                         <Text fontSize={'xs'} textAlign={'center'}>Enter your registered email to get a password recovery link from us.</Text>
 
 
                         {/* password input field  */}
-                        <HStack border={"1px solid #27debf"} padding={'2px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+                        <HStack border={"1px solid #75777c"} padding={'2px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
                             <AiOutlineLock size={'20'} />
                             <Input id='password' value={password} placeholder="Enter New Password" type='password' onChange={(e) => setPassword(e.target.value)} autoComplete='false' border={'none'} width={'90%'} focusBorderColor='transparent' required />
                             <BiShowAlt id='showPassword' onClick={hideShowPassword} size={'20'} />

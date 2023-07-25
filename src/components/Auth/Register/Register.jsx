@@ -16,7 +16,6 @@ export const fileUploadCSS = {
   width: '110%',
   border: "none",
   height: '100%',
-  color: "#26debf",
   backgroundColor: "transparent",
 }
 const fileUploadStyle = {
@@ -68,20 +67,20 @@ const Register = () => {
           <form style={{ width: '100%' }} > 
 
             {/* name input field  */}
-            <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+            <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
               <AiOutlineUser size={'20'} />
               <Input id='name' placeholder="John Doe" value={name} type='text' onChange={(e) => setName(e.target.value)} autoComplete='false' border={'none'} width={'90%'} focusBorderColor='transparent' required />
             </HStack>
 
 
             {/* email input field  */}
-            <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+            <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
               <AiOutlineMail size={'20'} />
               <Input id='email' value={email} placeholder="johndoe@gmail.com" type='email' onChange={(e) => setEmail(e.target.value)} autoComplete='false' border={'none'} width={'90%'} focusBorderColor='transparent' required />
             </HStack>
 
             {/* password input field  */}
-            <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+            <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
               <AiOutlineLock size={'20'} />
               <Input id='password' placeholder='***********' type='password' onChange={(e) => setPassword(e.target.value)} value={password} border={'none'} width={'90%'} autoComplete='false' focusBorderColor='transparent' required />
               <BiShowAlt id='showPassword' onClick={hideShowPassword} size={'20'} />
@@ -89,7 +88,7 @@ const Register = () => {
 
 
             {/* profile picture input field  */}
-            <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+            <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
               <Input id='avatar' type='file' accept='image/*' onChange={changeImageHandler} border={'none'} width={'90%'} autoComplete='false' focusBorderColor='transparent' required
                 css={fileUploadStyle}
               />

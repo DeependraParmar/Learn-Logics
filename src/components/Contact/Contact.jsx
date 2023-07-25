@@ -29,20 +29,20 @@ const Contact = () => {
                     <form style={{ width: '100%' }} >
 
                         {/* name input field  */}
-                        <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+                        <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
                             <AiOutlineUser size={'20'} />
                             <Input id='name' placeholder="Your Name here" value={name} type='text' onChange={(e) => setName(e.target.value)} autoComplete='false' border={'none'} width={'90%'} focusBorderColor='transparent' required />
                         </HStack>
 
 
                         {/* email input field  */}
-                        <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
+                        <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
                             <AiOutlineMail size={'20'} />
                             <Input id='email' value={email} placeholder="Your Email here" type='email' onChange={(e) => setEmail(e.target.value)} autoComplete='false' border={'none'} width={'90%'} focusBorderColor='transparent' required />
                         </HStack>
 
                         {/* password input field  */}
-                        <HStack border={"1px solid #27debf"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}  >
+                        <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}  >
                             <BiMessageDetail className='messageIcon' size={'20'} />
                             <Textarea id='message' placeholder='Message For Me' height={'4'} resize={'none'} onChange={(e) => setMessage(e.target.value)} value={message} border={'none'} width={'90%'} autoComplete='false' focusBorderColor='transparent' required />
                         </HStack>
