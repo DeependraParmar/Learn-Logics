@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { useState } from 'react';
 import React from 'react'
 import Particles from '../../Home/Particles';
+import { BiSend } from 'react-icons/bi';
 
 const ForgetPassword = () => {
     const [email, setEmail] = useState("");
@@ -27,7 +28,7 @@ const ForgetPassword = () => {
 
 
                         <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
-                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'50%'} type='submit' gap={'2'} >Send Reset Link</Button>
+                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'50%'} type='submit' gap={'2'} ><BiSend size={'20'} />Send Reset Link</Button>
                         </HStack>
                         
                     </form>

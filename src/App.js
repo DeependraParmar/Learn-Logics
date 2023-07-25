@@ -9,6 +9,7 @@ import Login from './components/Auth/Login/Login';
 import Register from './components/Auth/Register/Register';
 import ForgetPassword from './components/Auth/Forget Password/ForgetPassword';
 import ResetPassword from './components/Auth/Reset Password/ResetPassword';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/courses" element={<Courses/>} />
+        <Route path='/contact' element={<Contact />} />
         <Route path="/login" element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/forgetpassword' element={<ForgetPassword />} />
