@@ -7,6 +7,8 @@ import Courses from './components/Courses/Courses';
 import "./App.scss";
 import Login from './components/Auth/Login/Login';
 import Register from './components/Auth/Register/Register';
+import ForgetPassword from './components/Auth/Forget Password/ForgetPassword';
+import ResetPassword from './components/Auth/Reset Password/ResetPassword';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/courses" element={<Courses/>} />
         <Route path="/login" element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='/forgetpassword' element={<ForgetPassword />} />
+        <Route path='/resetpassword/:token' element = {<ResetPassword />} />
       </Routes>
       <Footer/>
     </Router>
