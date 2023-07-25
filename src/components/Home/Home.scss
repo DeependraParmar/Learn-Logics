@@ -1,0 +1,45 @@
+.home_container{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 8rem 0rem 5rem 0rem;
+}
+.heading{
+    filter: drop-shadow(2px 2px 1px #ffffff);
+}
+.head_image{
+    filter: drop-shadow(0px 0px 10px #bfbfbf);
+    animation: 2s infinite ease-in-out alternate animateImage;
+}
+@keyframes animateImage {
+    from{
+        transform: translateY(-12px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.particle {
+    position: fixed;
+    z-index: -10;
+    border-radius: 50%;
+}
+
+@for $i from 1 through 70 {
+    @keyframes particle-animation-#{$i} {
+        100% {
+            transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+        }
+    }
+
+    .particle:nth-child(#{$i}) {
+        animation: particle-animation-#{$i} 60s infinite;
+        $size: random(5)+5+px;
+        opacity: random(60)/100;
+        height: $size;
+        width: $size;
+        animation-delay: -$i * .2s;
+        transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+        background: hsl(random(360), 70%, 50%);
+    }
+}

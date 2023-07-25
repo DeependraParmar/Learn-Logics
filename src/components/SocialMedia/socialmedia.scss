@@ -1,0 +1,52 @@
+$main: #27debf;
+$main-dark: #808685;
+$main-light: rgb(108, 99, 255, 0.1);
+
+.socialmediaicons {
+    margin: 5px 0px;
+    >ul {
+        display: flex;
+        gap: 12px;
+        list-style: none;
+
+        >li {
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            >a {
+                background-color: $main-light;
+                color: $main-dark;
+
+                >svg {
+                    font-size: 25px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #27debf;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .socialmediaicons {
+        >ul {
+            gap: 6px;
+
+            >li {
+                >a {
+                    >svg {
+                        font-size: 22px;
+                        transform: translateY(6px);
+                    }
+                }
+            }
+        }
+    }
+}

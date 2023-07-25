@@ -1,0 +1,16 @@
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 7rem 0rem 4rem 0rem;
+    gap: 1rem;
+}
+.course{
+    transition: all 0.4s ease-in-out;
+}
+.course:hover{
+    box-shadow: 0px 0px 20px #27debf;
+    transform: translateY(-5px);
+}
