@@ -22,7 +22,7 @@ const Contact = () => {
                 <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
 
                     {/* learn logics heading  */}
-                    <Heading fontSize={['xl', '2xl', '3xl', '5xl']}>
+                    <Heading fontSize={['3xl', '3xl', '3xl', '5xl']}>
                         Contact Me
                     </Heading>
                     <SocialMediaIcons />
