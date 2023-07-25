@@ -48,7 +48,7 @@ const Courses = () => {
                 }}} >
                     {
                         categories.map((item, index) => (
-                            <Button minWidth={'60'} size={'xs'} key={index} onClick={() => setCategory(item)}>{item}</Button>
+                            <Button minWidth={'60'} size={'sm'} key={index} onClick={() => setCategory(item)}>{item}</Button>
                         ))
                     }
                 </HStack>
