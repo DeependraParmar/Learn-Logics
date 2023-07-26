@@ -18,7 +18,7 @@ const Contact = () => {
     return (
         <>
             <Particles />
-            <Container height={'95vh'} paddingY={'6rem'} >
+            <Container paddingY={'6rem'} >
                 <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
 
                     {/* learn logics heading  */}

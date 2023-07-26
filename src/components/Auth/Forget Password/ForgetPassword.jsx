@@ -28,7 +28,7 @@ const ForgetPassword = () => {
 
 
                         <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
-                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'50%'} type='submit' gap={'2'} ><BiSend size={'20'} />Send Reset Link</Button>
+                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'80%'} type='submit' gap={'2'} ><BiSend size={'20'} />Send Reset Link</Button>
                         </HStack>
                         
                     </form>

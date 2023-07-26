@@ -1,12 +1,10 @@
 import { Button, Heading, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
-import "./Footer.scss"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <section className="footer">
-        <Stack direction={'row'} flexWrap={'wrap'} justifyContent={'center'} spacing={'10'}>
+        <Stack direction={'row'} flexWrap={'wrap'} padding={'5'} justifyContent={['flex-start','flex-start','center','center']} spacing={'10'}>
 
           {/* about us section  */}
             <VStack align={'flex-start'} colorScheme={'black.alpha'} justifyContent={'flex-start'} width={'270px'}>
@@ -39,7 +37,6 @@ const Footer = () => {
               
             </VStack>
         </Stack>
-    </section>
   )
 }
 

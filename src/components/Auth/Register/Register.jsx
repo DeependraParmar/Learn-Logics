@@ -56,7 +56,7 @@ const Register = () => {
   return (
     <>
       <Particles />
-      <Container height={'95vh'} paddingY={'6rem'} >
+      <Container paddingY={'6rem'} >
         <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
           <Avatar src={imagePrev} size={'2xl'} />
 
@@ -97,7 +97,7 @@ const Register = () => {
 
             {/* login and  register buttons  */}
             <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
-              <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'40%'} gap={'2'} type='submit' ><AiOutlineUserAdd size={'20'} />Sign Up</Button>
+              <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={['80%', '80%', '60%', '60%']} gap={'2'} type='submit' ><AiOutlineUserAdd size={'20'} />Sign Up</Button>
             </HStack>
             <HStack justifyContent={'center'} padding={'2'} className='inputfield'>
               <span>Already a User?</span>

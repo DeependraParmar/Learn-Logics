@@ -31,12 +31,12 @@ const Login = () => {
     return (
         <>
             <Particles />
-            <Container height={'95vh'} paddingY={'8rem'} >
+            <Container paddingY={'8rem'} >
 
                 <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
 
                     {/* welcome heading  */}
-                    <Heading fontSize={['lg', 'lg', '2xl', '3xl']}>Welcome Back, Login Now</Heading>
+                    <Heading fontSize={['lg', 'xl', '2xl', '4xl']}>Welcome Back, Login Now</Heading>
                     <form style={{ width: '100%' }} >
 
                         
@@ -53,7 +53,7 @@ const Login = () => {
                             <BiShowAlt id='showPassword' onClick={hideShowPassword} size={'20'} />
                         </HStack>
                         <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
-                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={'40%'} type='submit' gap={'2'} > <BiLogIn size={'20'}/> Login</Button>
+                            <Button fontSize={'sm'} colorScheme='teal' variant={'solid'} width={['80%', '80%', '60%', '50%']} type='submit' gap={'2'} > <BiLogIn size={'20'}/> Login</Button>
                         </HStack>
                         <HStack justifyContent={'center'} padding={'2'} className='inputfield'>
                             <Link to={'/forgetpassword'}>
