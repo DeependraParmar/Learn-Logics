@@ -4,8 +4,12 @@ import { useState } from 'react';
 import React from 'react'
 import Particles from '../../Home/Particles';
 import { BiSend } from 'react-icons/bi';
+import { useEffect } from 'react';
 
 const ForgetPassword = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
     const [email, setEmail] = useState("");
     return (
         <>

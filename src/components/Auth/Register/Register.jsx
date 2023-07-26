@@ -9,6 +9,7 @@ import "../../Home/Home.scss"
 import "./Register.scss"
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
+import { useEffect } from 'react';
 
 export const fileUploadCSS = {
   cursor: "pointer",
@@ -23,6 +24,9 @@ const fileUploadStyle = {
 };
 
 const Register = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

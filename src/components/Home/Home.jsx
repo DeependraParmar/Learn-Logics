@@ -7,9 +7,13 @@ import { Link } from "react-router-dom"
 import { motion } from 'framer-motion';
 import Particles from './Particles';
 import SocialMediaIcons from '../SocialMedia/SocialMedia';
+import { useEffect } from 'react';
 
 const Home = () => {
-    document.title = "Learn Logics"
+    document.title = "Learn Logics";
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
     return (
         <>
 

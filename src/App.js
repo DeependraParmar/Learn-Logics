@@ -14,6 +14,7 @@ import About from './components/About/About';
 import TermsAndConditions from './components/Terms&Conditions/TermsAndConditions';
 
 function App() {
+  
   return (
     <Router>
       <Header/>

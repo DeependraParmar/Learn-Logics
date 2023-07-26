@@ -9,8 +9,14 @@ import { Link } from 'react-router-dom';
 import "../../Home/Home.scss"
 import { BsExclamationTriangleFill } from "react-icons/bs";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { useEffect } from 'react';
 
 const Login = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     // eslint-disable-next-line
     const [email, setEmail] = useState("");
     // eslint-disable-next-line

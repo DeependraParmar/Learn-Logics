@@ -3,8 +3,12 @@ import Particles from '../Home/Particles'
 import { Avatar, Container, Heading, Stack, VStack, Text, Button } from '@chakra-ui/react'
 import founder from "../../assets/images/founder.png"
 import SocialMediaIcons from '../SocialMedia/SocialMedia'
+import { useEffect } from 'react'
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   return (
     <>
       <Particles />

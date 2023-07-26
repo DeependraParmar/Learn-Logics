@@ -5,8 +5,12 @@ import {useParams} from "react-router-dom";
 import { BiShowAlt } from "react-icons/bi";
 import Particles from '../../Home/Particles';
 import { AiOutlineLock } from "react-icons/ai";
+import { useEffect } from 'react';
 
 const ResetPassword = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
     const [password, setPassword] = useState("");
     const params = useParams();
     console.log(params.token);

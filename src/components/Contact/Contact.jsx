@@ -6,9 +6,14 @@ import Particles from '../Home/Particles';
 import { BiMessageDetail, BiSend } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import SocialMediaIcons from '../SocialMedia/SocialMedia';
+import { useEffect } from 'react';
 
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");

@@ -5,9 +5,15 @@ import { Link } from 'react-router-dom';
 import Particles from '../Home/Particles';
 import { AiOutlinePlaySquare } from "react-icons/ai";
 import { MdPlaylistAdd } from "react-icons/md";
+import { useEffect } from 'react';
 
 
 const Courses = () => {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     const [keyword, setKeyword] = useState("");
     // eslint-disable-next-line
     const [category, setCategory] = useState("");
