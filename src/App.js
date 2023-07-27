@@ -12,8 +12,13 @@ import ResetPassword from './components/Auth/Reset Password/ResetPassword';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import TermsAndConditions from './components/Terms&Conditions/TermsAndConditions';
+import NotFound from './components/Layout/Not Found/NotFound';
+import CoursePage from './components/Course Page/CoursePage';
 
 function App() {
+  window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
   
   return (
     <Router>
@@ -21,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/courses" element={<Courses/>} />
+        <Route path="/courses/:id" element={<CoursePage/>} />
         <Route path='/contact' element={<Contact />} />
         <Route path="/login" element={<Login/>} />
         <Route path='/register' element={<Register/>} />
@@ -28,6 +34,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/forgetpassword' element={<ForgetPassword />} />
         <Route path='/resetpassword/:token' element = {<ResetPassword />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer/>
     </Router>
