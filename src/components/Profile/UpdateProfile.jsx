@@ -33,7 +33,6 @@ const UpdateProfile = () => {
                       <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
                           <AiOutlineUser size={'20'} />
                           <Input value={name} id='name' placeholder='Enter Your Name' type='name' onChange={(e) => setName(e.target.value)} border={'none'} width={'90%'} autoComplete='false' focusBorderColor='transparent' />
-                          <BiShowAlt id='showPassword' size={'20'} />
                       </HStack>
 
 
@@ -41,7 +40,6 @@ const UpdateProfile = () => {
                       <HStack border={"1px solid #75777c"} padding={'4px 8px'} borderRadius={'10px'} marginY={'1rem'} className='inputfield' spacing={'3'}>
                           <AiOutlineMail size={'20'} />
                           <Input value={email} id='email' placeholder='Enter Email here' type='email' onChange={(e) => setEmail(e.target.value)} border={'none'} width={'90%'} autoComplete='false' focusBorderColor='transparent' />
-                          <BiShowAlt id='showPassword' size={'20'} />
                       </HStack>
 
                       <HStack justifyContent={'center'} padding={'2'} className='inputfield' spacing={'3'}>
