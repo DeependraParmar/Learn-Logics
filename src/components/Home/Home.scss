@@ -1,6 +1,6 @@
 .home_container{
     box-sizing: border-box;
-    padding: 8rem 0rem 5rem 0rem;
+    padding: 8rem 0rem 0rem 0rem;
 }
 .head_image{
     filter: drop-shadow(0px 0px 10px #bfbfbf);
@@ -38,4 +38,8 @@
         transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
         background: hsl(random(360), 70%, 50%);
     }
+}
+
+.faq{
+    padding: 4rem 0rem;
 }
