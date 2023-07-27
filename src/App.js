@@ -15,6 +15,8 @@ import TermsAndConditions from './components/Terms&Conditions/TermsAndConditions
 import NotFound from './components/Layout/Not Found/NotFound';
 import CoursePage from './components/Course Page/CoursePage';
 import Profile from './components/Profile/Profile';
+import ChangePassword from './components/Profile/ChangePassword';
+import UpdateProfile from './components/Profile/UpdateProfile';
 
 function App() {
   window.addEventListener('contextmenu', (e) => {
@@ -26,16 +28,25 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
+
         <Route path="/courses" element={<Courses/>} />
         <Route path="/courses/:id" element={<CoursePage/>} />
+
         <Route path='/contact' element={<Contact />} />
         <Route path="/login" element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+
         <Route path='/termsandconditions' element={<TermsAndConditions />} />
+
         <Route path='/about' element={<About />} />
+
         <Route path='/forgetpassword' element={<ForgetPassword />} />
         <Route path='/resetpassword/:token' element = {<ResetPassword />} />
+
         <Route path='/profile' element={<Profile />} />
+        <Route path='/changepassword' element={<ChangePassword />} />
+        <Route path='/updateprofile' element={<UpdateProfile />} />
+        
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer/>
