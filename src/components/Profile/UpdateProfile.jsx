@@ -23,7 +23,7 @@ const UpdateProfile = () => {
               <VStack height={'fit-content'} paddingY={'2rem'} paddingX={'1rem'} justifyContent={'center'} borderRadius={'10px'} backdropFilter={'blur(5px)'} spacing={'5'}>
 
                   {/* welcome heading  */}
-                  <Heading fontSize={['lg', 'xl', '2xl', '4xl']} color={'#27debf'}>Update Your Profile</Heading>
+                  <Heading fontSize={['2xl', '2xl', '3xl', '4xl']} color={'#27debf'}>Update Your Profile</Heading>
                   <form style={{ width: '100%' }} >
 
 
