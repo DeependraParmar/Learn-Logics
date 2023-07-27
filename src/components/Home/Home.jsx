@@ -70,7 +70,9 @@ export default Home;
 
 function FrequentlyAskedQuestions() {
     return (
-        <section className="faq">
+        <section style={{
+            "backdropFilter": "blur(5px)"
+        }} className="faq">
             <Heading
                 color={'#1fb299'}
                 fontSize={['3xl', '4xl', '4xl', '6xl']}
