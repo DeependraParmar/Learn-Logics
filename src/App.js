@@ -14,6 +14,7 @@ import About from './components/About/About';
 import TermsAndConditions from './components/Terms&Conditions/TermsAndConditions';
 import NotFound from './components/Layout/Not Found/NotFound';
 import CoursePage from './components/Course Page/CoursePage';
+import Profile from './components/Profile/Profile';
 
 function App() {
   window.addEventListener('contextmenu', (e) => {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/forgetpassword' element={<ForgetPassword />} />
         <Route path='/resetpassword/:token' element = {<ResetPassword />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer/>

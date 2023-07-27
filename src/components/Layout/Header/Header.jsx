@@ -21,7 +21,7 @@ const Header = () => {
     </Link>
   )
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const user = {
     role: "admin"
   }
