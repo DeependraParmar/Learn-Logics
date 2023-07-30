@@ -3,8 +3,16 @@ import React from 'react'
 import Sidebar from '../Sidebar'
 import Particles from '../../Home/Particles'
 import { RiDeleteBin7Fill } from 'react-icons/ri'
+import { toast } from 'react-hot-toast'
 
 const Users = () => {
+  const updateRoleHandler = (id) => {
+    toast.success("Role Updated Successfully")
+  }
+  const deleteUserHandler = (id) => {
+    toast.success("User Deleted Successfully");
+
+  }
 
   // creating temporary data for the table
   const users = [
@@ -56,8 +64,8 @@ const Users = () => {
                       <Td textAlign={'center'}>{user.subscription==='active'?"Active":"Not Active"}</Td>
                       <Td textAlign={'center'} isNumeric >
                         <HStack justifyContent={'center'} spacing={'1rem'} >
-                            <Button size={'sm'} colorScheme={'teal'} variant={'outline'} >Change Role</Button>
-                            <Button size={'sm'} colorScheme='teal' variant={'outline'} ><RiDeleteBin7Fill size='16' /></Button>
+                            <Button onClick={() => updateRoleHandler(user.id)} size={'sm'} colorScheme={'teal'} variant={'outline'} >Change Role</Button>
+                            <Button onClick={() => deleteUserHandler(user.id)} size={'sm'} colorScheme='teal' variant={'outline'} ><RiDeleteBin7Fill size='16' /></Button>
                         </HStack>
                       </Td>
                     </Tr>

@@ -21,6 +21,7 @@ import Dashboard from './components/Admin/Dashboard/Dashboard';
 import CoursesAdmin from './components/Admin/Courses/CoursesAdmin';
 import Users from './components/Admin/Users/Users';
 import CreateCourse from './components/Admin/CreateCourse/CreateCourse';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   window.addEventListener('contextmenu', (e) => {
@@ -61,6 +62,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer/>
+      <Toaster />
     </Router>
   );
 }
