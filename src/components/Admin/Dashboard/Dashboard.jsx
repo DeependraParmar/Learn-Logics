@@ -43,7 +43,7 @@ const Dashboard = () => {
             <Particles />
             <Grid backdropFilter={'blur(5px)'} justifyContent={'center'} padding={['7rem 1rem', '7rem 2rem', '7rem 2rem', '7rem 0rem 2rem 0rem']} templateColumns={['1fr', '1fr', '4fr 1fr', '5fr 1fr']} >
                 <Box boxSizing='border-box'>
-                    <Heading textAlign={'center'} mb={'1rem'} fontSize={['3xl', '3xl', '4xl', '6xl']} >Dashboard</Heading>
+                    <Heading textAlign={'center'} mb={'1rem'} fontSize={['3xl', '3xl', '4xl', '6xl']} >Admin Dashboard</Heading>
                     <Text textAlign={'center'} fontSize={'sm'} opacity={0.5} children={`Last Changed on: ${String(new Date()).split("G")[0]}`} />
 
                     <Stack direction={['column', 'column', 'row', 'row']} justifyContent={'center'} alignItems={'center'} mt={'2rem'} spacing={'2rem'} >

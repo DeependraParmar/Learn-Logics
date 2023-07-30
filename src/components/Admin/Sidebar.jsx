@@ -7,7 +7,7 @@ const Sidebar = () => {
     const location = useLocation();
     return (
         <>
-            <VStack alignItems={'flex-start'} spacing={'4'} >
+            <VStack borderLeft={['', '', '1px solid teal','1px solid teal']} alignItems={'flex-start'} spacing={'4'} padding={['2rem 0rem','2rem 0rem','2rem','3rem']} >
                 <SidebarLinks route={'dashboard'} active={location.pathname==='/admin/dashboard'} icon={<RiDashboardFill size={'20'} />} text={'Dashboard'} />
                 <SidebarLinks route={'users'} active={location.pathname==='/admin/users'} icon={<RiUser3Fill size={'20'} />} text={'Users'} />
                 <SidebarLinks route={'courses'} active={location.pathname==='/admin/courses'} icon={<RiBook2Fill size={'20'} />} text={'Courses'} />
