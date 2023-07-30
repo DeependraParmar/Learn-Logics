@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar'
 import { RiArrowDownLine, RiArrowUpLine } from 'react-icons/ri'
 import Particles from '../../Home/Particles'
 import { DoughnutChart, LineChart } from './Charts'
+import { useEffect } from 'react'
 
 const DataBox = ({ title, quantity, qtyPercentage, profit }) => {
     return (
@@ -38,6 +39,9 @@ const Bar = ({ title, value, profit }) => {
     )
 }
 const Dashboard = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Particles />

@@ -4,8 +4,14 @@ import Sidebar from '../Sidebar'
 import Particles from '../../Home/Particles'
 import { RiDeleteBin7Fill } from 'react-icons/ri'
 import { toast } from 'react-hot-toast'
+import { useEffect } from 'react'
 
 const Users = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const updateRoleHandler = (id) => {
     toast.success("Role Updated Successfully")
   }

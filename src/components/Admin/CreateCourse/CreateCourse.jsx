@@ -4,10 +4,14 @@ import Sidebar from '../Sidebar'
 import { RiAddCircleLine, RiBook3Fill, RiFileTextFill } from 'react-icons/ri';
 import { fileUploadCSS } from '../../Auth/Register/Register';
 import Particles from '../../Home/Particles';
+import { useEffect } from 'react';
 
 
 
 const CreateCourse = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   const changeImageHandler = (e) => {
