@@ -28,6 +28,7 @@ export const LineChart = () => {
                 fill: false,
                 backgroundColor: '#fff',
                 borderColor: '#27debf',
+                borderWidth: 1,
             },
         ],
     };
