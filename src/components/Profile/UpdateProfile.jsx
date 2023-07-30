@@ -3,7 +3,6 @@ import Particles from '../Home/Particles'
 import { AiOutlineMail, AiOutlineUser } from 'react-icons/ai';
 import { TiTick } from 'react-icons/ti';
 import { Button, Container, HStack, Heading, Input, VStack } from '@chakra-ui/react';
-import { BiShowAlt } from 'react-icons/bi';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
@@ -52,4 +51,4 @@ const UpdateProfile = () => {
   )
 }
 
-export default UpdateProfile
+export default UpdateProfile;

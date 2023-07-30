@@ -17,6 +17,10 @@ import CoursePage from './components/Course Page/CoursePage';
 import Profile from './components/Profile/Profile';
 import ChangePassword from './components/Profile/ChangePassword';
 import UpdateProfile from './components/Profile/UpdateProfile';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import CoursesAdmin from './components/Admin/Courses/CoursesAdmin';
+import Users from './components/Admin/Users/Users';
+import CreateCourse from './components/Admin/CreateCourse/CreateCourse';
 
 function App() {
   window.addEventListener('contextmenu', (e) => {
@@ -27,6 +31,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
+        {/* Common Routes  */}
         <Route path="/" element={<Home/>} />
 
         <Route path="/courses" element={<Courses/>} />
@@ -46,6 +51,12 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/changepassword' element={<ChangePassword />} />
         <Route path='/updateprofile' element={<UpdateProfile />} />
+
+        {/* admin routes  */}
+        <Route path='/admin/dashboard' element={<Dashboard />} />
+        <Route path='/admin/courses' element={<CoursesAdmin />} />
+        <Route path='/admin/users' element={<Users />} />
+        <Route path='/admin/createcourse' element={<CreateCourse />} />
         
         <Route path='*' element={<NotFound />} />
       </Routes>
