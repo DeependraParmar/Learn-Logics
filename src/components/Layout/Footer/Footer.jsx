@@ -1,10 +1,13 @@
 import { Button, Heading, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Particles from '../../Home/Particles'
 
 const Footer = () => {
   return (
-        <Stack direction={'row'} flexWrap={'wrap'} padding={'5'} justifyContent={['flex-start','flex-start','center','center']} spacing={'10'}>
+    <>
+    <Particles />
+        <Stack direction={'row'} flexWrap={'wrap'} padding={'5'} justifyContent={['flex-start','flex-start','center','center']} backdropFilter={'blur(5px)'} spacing={'10'}>
 
           {/* about us section  */}
             <VStack align={'flex-start'} colorScheme={'black.alpha'} justifyContent={'flex-start'} width={'270px'}>
@@ -37,6 +40,7 @@ const Footer = () => {
               
             </VStack>
         </Stack>
+    </>
   )
 }
 
