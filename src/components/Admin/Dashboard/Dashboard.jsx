@@ -2,6 +2,7 @@ import { Box, Grid, HStack, Heading, Progress, Stack, Text } from '@chakra-ui/re
 import React from 'react'
 import Sidebar from '../Sidebar'
 import { RiArrowDownLine, RiArrowUpLine } from 'react-icons/ri'
+import Particles from '../../Home/Particles'
 
 const DataBox = ({ title, quantity, qtyPercentage, profit }) => {
     return (
@@ -38,7 +39,8 @@ const Bar = ({ title, value, profit }) => {
 const Dashboard = () => {
     return (
         <>
-            <Grid justifyContent={'center'} padding={['7rem 1rem', '7rem 2rem','7rem 2rem', '7rem 0rem 2rem 0rem']} templateColumns={['1fr', '1fr', '4fr 1fr', '5fr 1fr']} >
+        <Particles />
+            <Grid backdropFilter={'blur(5px)'} justifyContent={'center'} padding={['7rem 1rem', '7rem 2rem','7rem 2rem', '7rem 0rem 2rem 0rem']} templateColumns={['1fr', '1fr', '4fr 1fr', '5fr 1fr']} >
                 <Box boxSizing='border-box'>
                     <Heading textAlign={'center'} mb={'1rem'} fontSize={['3xl', '3xl', '4xl', '6xl']} >Dashboard</Heading>
                     <Text textAlign={'center'} fontSize={'sm'} opacity={0.5} children={`Last Changed on: ${String(new Date()).split("G")[0]}`} />
