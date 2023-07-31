@@ -22,6 +22,8 @@ import CoursesAdmin from './components/Admin/Courses/CoursesAdmin';
 import Users from './components/Admin/Users/Users';
 import CreateCourse from './components/Admin/CreateCourse/CreateCourse';
 import { Toaster } from 'react-hot-toast';
+import BlogsHome from './components/Blogs/BlogsHome';
+import BlogDetails from './components/Blogs/BlogDetails';
 
 function App() {
   window.addEventListener('contextmenu', (e) => {
@@ -45,6 +47,8 @@ function App() {
         <Route path='/termsandconditions' element={<TermsAndConditions />} />
 
         <Route path='/about' element={<About />} />
+        <Route path='/blogs' element={<BlogsHome />} />
+        <Route path='/blogs/:id' element={<BlogDetails />} />
 
         <Route path='/forgetpassword' element={<ForgetPassword />} />
         <Route path='/resetpassword/:token' element = {<ResetPassword />} />

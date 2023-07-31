@@ -1,6 +1,8 @@
 .home_container{
     box-sizing: border-box;
     padding: 8rem 0rem 0rem 0rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .head_image{
     filter: drop-shadow(0px 0px 10px #bfbfbf);

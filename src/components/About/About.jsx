@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Particles />
-      <Container maxW="container.xl" paddingTop={'7rem'} paddingBottom={'3rem'} >
+      <Container maxW="container.xl" backdropFilter={'blur(5px)'} paddingTop={'7rem'} paddingBottom={'3rem'} >
         <Heading textAlign={['center']} fontSize={['4xl', '5xl', '5xl', '5xl']} >About Me</Heading>
         <Stack justifyContent={['center', 'center', 'flex-start', 'flex-start']} direction={['column', 'column', 'row', 'row']} spacing={['5', '10']} padding={'8'} >
 

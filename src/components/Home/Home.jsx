@@ -7,6 +7,8 @@ import { Link } from "react-router-dom"
 import Particles from './Particles';
 import SocialMediaIcons from '../SocialMedia/SocialMedia';
 import { useEffect } from 'react';
+import { BiNavigation } from 'react-icons/bi';
+import { RiBook3Line } from 'react-icons/ri';
 
 const Home = () => {
     document.title = "Learn Logics";
@@ -51,10 +53,10 @@ const Home = () => {
                         <SocialMediaIcons />
                         <HStack spacing={5}>
                             <a href="https://learnlogics.page.link/RtQw" target='blank'>
-                                <Button colorScheme={'teal'} variant={'solid'}>Explore</Button>
+                                <Button colorScheme={'teal'} variant={'solid'} gap={'2'}><BiNavigation size={'20'} /> Explore</Button>
                             </a>
                             <Link to="/courses">
-                                <Button variant={'solid'}>Courses</Button>
+                                <Button variant={'solid'} gap={'2'} ><RiBook3Line size={'20'} />Courses</Button>
                             </Link>
                         </HStack>
                     </VStack>
