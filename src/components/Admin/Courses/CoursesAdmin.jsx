@@ -17,9 +17,16 @@ const CoursesAdmin = () => {
   const courseDetailsHandler = (id) => {
     onOpen();
   }
-  const deletecoursesHandler = (id) => {
-    toast.success("courses Deleted Successfully");
+  const deleteCoursesHandler = (id) => {
+    toast.success("Course Deleted Successfully");
 
+  }
+  const deleteLectureButtonHandler = (course_id, lecture_id) => {
+    console.log(course_id, lecture_id)
+  }
+  const addLectureHandler = (e,course_id,title,description,video) => {
+    e.preventDefault();
+    console.log(course_id);
   }
 
   // creating temporary data for the table
@@ -71,7 +78,7 @@ const CoursesAdmin = () => {
                     <Tr textAlign={'center'} key={courses.id} >
                       <Td textAlign={'center'}>#{courses.id}</Td>
                       <Td textAlign={'center'}>
-                        <Image src={courses.poster.url} alt={courses.title} textAlign={'center'} boxSize={'32'} objectFit='contain' />
+                        <Image src={courses.poster.url} alt={courses.title} textAlign={'center'} objectFit='contain' />
                       </Td>
                       <Td textAlign={'center'}>{courses.title}</Td>
                       <Td isNumeric textAlign={'center'}>{courses.views}</Td>
@@ -79,7 +86,7 @@ const CoursesAdmin = () => {
                       <Td textAlign={'center'} isNumeric >
                         <HStack justifyContent={'center'} spacing={'1rem'} >
                           <Button onClick={() => courseDetailsHandler(courses.id)} size={'sm'} colorScheme={'teal'} variant={'outline'} >View Lectures</Button>
-                          <Button onClick={() => deletecoursesHandler(courses.id)} size={'sm'} colorScheme='teal' variant={'outline'} ><RiDeleteBin7Fill size='16' /></Button>
+                          <Button onClick={() => deleteCoursesHandler(courses.id)} size={'sm'} colorScheme='teal' variant={'outline'} ><RiDeleteBin7Fill size='16' /></Button>
                         </HStack>
                       </Td>
             </Tr>
@@ -90,7 +97,7 @@ const CoursesAdmin = () => {
       </TableContainer>
 
 
-      <CourseDetails isOpen={isOpen} onClose={onClose}  />
+      <CourseDetails isOpen={isOpen} onClose={onClose} id={courses.id} deleteButtonHandler={deleteLectureButtonHandler} addLectureHandler={addLectureHandler} course_title={courses.title}  />
     </Box >
       <Sidebar />
       </Grid >
